@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Zak">
+		<meta name="description" content="Fly To The Limit Website">
+		<meta name = "keywords" content="Fly To The limit Adventure Queenstown Wanaka Flight Scenery">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<title>Fly To The Limit</title>
+
+	</head>
+	<body id="contactBg">
+		
+			<header>
+
+					<nav>
+
+						<ul id="logo">
+							<li><a href="index.html"><img src="images/logo.png" alt="fly to the limit logo"></a></li>
+						</ul>
+						
+						<ul id="navItems">
+							
+							<li class="navigation"><a href="index.html">About</a></li>
+							<li class="navigation"><a href="team.html">The Team</a></li>
+							<li class="navigation"><a href="gallery.html">Gallery</a></li>
+							<li class="permHover"><a href="contact.html">Contact</a></li>
+							<li id="booking" class="navigation"><a href="bookings.html">Bookings</a></li>
+							
+
+						</ul>
+
+					</nav>
+
+					
+			</header>
+
+		<div id="bgImage">
+			<h1 class="textOver">EXPERIENCE QUEENSTOWN<br> LIKE NEVER BEFORE</h1>
+		</div>
+
+		<main class="centerAlign">
+			<div id="contactContain">
+				<div id="contactForm">
+					<h1 id="contactHeader">CONTACT</h1>
+					<form>
+						<div>
+							<label class="contactLabel" for="contactName">Name:</label>
+							<input type="text" name="contactName" id="contactName">
+						</div>
+						<div>
+							<label class="contactLabel" for="contactEmail">Email</label>
+							<input type="email" name="contactName" id="contactEmail">	
+						</div>
+						<div>
+							<label class="contactLabel" for="contactType">Contact Type</label>
+								<select name="contactType" id="contactType">
+									<option value="enquiry">Enquiry</option>
+									<option value="complaint">Complaint</option>
+									<option value="appraisal">Appraisal</option>
+									<option value="other">Other</option>
+								</select>
+						</div>
+
+						<div class="form-group">
+							<label class="contactLabel" for="message">Enter Message:</label><br>
+							<textarea name="message" id="message" required minlength="8" maxlength="15" rows="5" cols="60"></textarea>
+							<span id="message-error"></span>
+						</div>
+						<div class="form-group">
+							<button id="contactSubmit" type="submit">Submit</button>
+						</div>				
+					</form>
+
+				</div>
+			</div>	
+		</main>
+
+		<footer>
+
+				<div id="leftFoot">
+					<a href="https://www.google.com"><img id="location" src="images/location.png" alt="location"></a>
+					<p id="locationText">11 Townsend Drive, Wanaka</p>
+				</div>	
+
+
+				<div id="middleFoot">
+					<a href="https://www.facebook.com"><img class="mid" src="images/facebook.png" alt="Facebook Link"></a>
+					<a href="https://www.twitter.com"><img class="mid" src="images/twitter.png" alt="Twitter Link"></a>
+					<a href="https://www.instagram.com"><img class="mid" src="images/instagram.png" alt="Instagram Link"></a>
+				</div>
+
+				<div id="rightFooter">
+					<p id="contactUs">Contact Us!</p>
+					<p>0800 LIMITLESS</p>
+					<p>flytothelimit@gmail.com</p>
+				</div>
+
+				<a class="buttonBlue" href="bookings.html">BOOK NOW</a>
+		</footer>
+
+
+	 	<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>

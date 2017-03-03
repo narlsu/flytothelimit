@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Zak">
+		<meta name="description" content="Fly To The Limit Website">
+		<meta name = "keywords" content="Fly To The limit Adventure Queenstown Wanaka Flight Scenery">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<title>Fly To The Limit</title>
+
+	</head>
+	<body>
+			<header>
+
+					<nav>
+
+						<ul id="logo">
+							<li><a href="index.html"><img src="images/logo.png" alt="fly to the limit logo"></a></li>
+						</ul>
+						
+						<ul id="navItems">
+							
+							<li class="navigation"><a href="index.html">About</a></li>
+							<li class="navigation"><a href="team.html">The Team</a></li>
+							<li class="navigation"><a href="gallery.html">Gallery</a></li>
+							<li class="navigation"><a href="contact.html">Contact</a></li>
+							<li id="booking" class="navigation, bookStyle"><a href="bookings.html">Bookings</a></li>
+							
+
+						</ul>
+
+					</nav>
+
+					
+			</header>
+
+		<div id="bgImage">
+			<h1 class="textOver">EXPERIENCE QUEENSTOWN<br> LIKE NEVER BEFORE</h1>
+		</div>
+
+		<main class="bookingHeight" id="bookingMountain">
+
+			<form id="bookingForm" method="post" action="success.html">
+				<h1 class="headerSpacing">BRING IT ON</h1>
+				<h2 id="bookingHeader">Select your tour type</h2>
+
+				<div class="form-group spacing">
+					<input class="noDisplay" type="radio" name="tourType" id="standard">
+					<label class="buttonDefault" for="standard">Standard</label>
+					
+					<input class="noDisplay" type="radio" name="tourType" id="custom">
+					<label class="buttonDefault" for="custom">Custom</label>
+					
+					
+				</div>
+				<!-- <span id="custom-error"></span>
+				<span id="standard-error"></span> -->
+				<span id="tourType-error"></span>
+
+
+				<div id="flexContain" class="form-group">
+					<div class="imageContainer">
+						<input class="noDisplay" type="radio" name="planeType" id="fixedWing">
+						<label class="buttonDefault" for="fixedWing">Fixed Wing</label>
+						<img class="imageDisp" src="images/fixedWing.jpg" alt="Fixed Wing Plane">
+					</div>
+
+					<!-- <span id="fixedWing-error"></span> -->
+
+					<div class="imageContainer">
+						<input class="noDisplay" type="radio" name="planeType" id="glider">
+						<label class="buttonDefault" for="glider">Glider</label>
+						<img class="imageDisp" src="images/glider.jpg" alt="Glider Plane">
+					</div>
+
+					<!-- <span id="glider-error"></span> -->
+
+					<div class="imageContainer">
+						<input class="noDisplay" type="radio" name="planeType" id="helicopter">
+						<label class="buttonDefault" for="helicopter">Helicopter</label>
+						<img class="imageDisp" src="images/helicopter.jpg" alt="Helicopter">
+					</div>
+
+					<!-- <span id="helicopter-error"></span> -->
+
+					<div class="imageContainer">
+						<input class="noDisplay" type="radio" name="planeType" id="amphibian">
+						<label class="buttonDefault" for="amphibian">Amphibian</label>
+						<img class="imageDisp" src="images/amphibian.jpg" alt="Amphibian Plane">
+					</div>
+					
+					<!-- <span id="amphibian-error"></span> -->
+					<span id="planeType-error"></span>
+				</div>
+
+				
+
+				<div class="form-group spacing">
+					<input required class="noDisplay" type="radio" name="journeyType" id="oneWayFlight">
+					<label class="buttonDefault" for="oneWayFlight">One Way</label>
+					
+					<input required class="noDisplay" type="radio" name="journeyType" id="returnFlight">
+					<label class="buttonDefault" for="returnFlight">Return</label>
+				</div>
+				<span id="journeyType-error"></span>
+				<!-- <span id="returnFlight-error"></span>
+				<span id="oneWayFlight-error"></span> -->
+
+				<!-- Calendar -->
+				<div class="form-group">
+					<label for="peopleNumber" class="labelStyle">Number Of People:</label>
+					<input type="number" name="peopleNumber" id="peopleNumber" required min="1">
+					<span id="peopleNumber-error"></span>
+				</div>
+				<div class="form-group">
+					<label for="message" class="labelStyle">Additional Information:</label><br>
+					<textarea name="message" id="message" minlength="8" maxlength="15" rows="5" cols="40"></textarea>
+					<span id="message-error"></span>
+				</div>
+
+				<div class="form-group">
+					<label for="firstName" class="labelStyle">First Name</label>
+					<input type="text" name="firstName" id="firstName" required minlength="3">
+					<span id="firstName-error"></span>
+				</div>
+
+				<div class="form-group">
+					<label for="lastName" class="labelStyle">Last Name</label>
+					<input type="text" name="lastName" id="lastName" required>
+					<span id="lastName-error"></span>
+				</div>
+
+				<div class="form-group">
+					<label for="email" class="labelStyle">Email</label>
+					<input type="email" name="email" id="email" required>
+					<span id="email-error"></span>
+				</div>
+				<div class="form-group">
+					<label for="agree" class="labelStyle">I agree to the terms and conditions.</label>
+					<input type="checkbox" name="agree" id="agree">
+					<span id="agree-error"></span>	
+				</div>
+
+				<div class="form-group">
+				<button id="bookingSubmit" type="submit">Submit</button>
+				</div>
+			</form>
+		</main>
+
+		<footer>
+
+				<div id="leftFoot">
+					<a href="https://www.google.com"><img id="location" src="images/location.png" alt="location"></a>
+					<p id="locationText">11 Townsend Drive, Wanaka</p>
+				</div>	
+
+
+				<div id="middleFoot">
+					<a href="https://www.facebook.com"><img class="mid" src="images/facebook.png" alt="Facebook Link"></a>
+					<a href="https://www.twitter.com"><img class="mid" src="images/twitter.png" alt="Twitter Link"></a>
+					<a href="https://www.instagram.com"><img class="mid" src="images/instagram.png" alt="Instagram Link"></a>
+				</div>
+
+				<div id="rightFooter">
+					<p id="contactUs">Contact Us!</p>
+					<p>0800 LIMITLESS</p>
+					<p>flytothelimit@gmail.com</p>
+				</div>
+
+				<a class="buttonBlue" href="bookings.html">BOOK NOW</a>
+		</footer>
+
+
+	 	<script type="text/javascript" src="js/script.js"></script>
+	 		 	<script type="text/javascript">
+
+	 		//when DOM is loaded
+			document.addEventListener("DOMContentLoaded", function(){
+
+				// find the form
+				var contactForm = document.querySelector('#bookingForm');
+
+				// call form validation and pass the form to it
+				formValidation(contactForm);
+			});
+
+	 	</script>
+	</body>
+</html>
